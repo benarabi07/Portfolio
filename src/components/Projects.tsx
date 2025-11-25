@@ -9,7 +9,6 @@ import {
   SiSymfony,
   SiJavascript,
   SiHtml5,
-  SiGitlab,
   SiClevercloud,
   SiKeycloak,
   SiSwagger,
@@ -87,7 +86,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="mt-32 mb-20 px-8 py-16 rounded-3xl shadow-md bg-gradient-to-b from-sky-50 via-white to-sky-50"
+      className="mt-32 mb-20 px-8 py-16 rounded-3xl shadow-md from-sky-50 via-white to-sky-50"
     >
       <h2 className="text-3xl font-bold text-center text-sky-600">
         Mes projets

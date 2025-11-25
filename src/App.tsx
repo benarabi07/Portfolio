@@ -7,7 +7,6 @@ import Education from "./components/Education";
 import Skills from "./components/Skills";
 import About from "./components/About";
 
-import TechCarousel from "./components/TechCarousel";
 
 function App() {
   return (
@@ -19,7 +18,6 @@ function App() {
         <Projects />
         <Education />
         <Skills />
-        {/* <TechCarousel />         */}
         <Contact />
 
       </main>

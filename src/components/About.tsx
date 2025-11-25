@@ -1,5 +1,5 @@
-import blob from "../assets/blob.svg";
-import wave from "../assets/wave.svg";
+// import blob from "../assets/blob.svg";
+// import wave from "../assets/wave.svg";
 
 export default function About() {
     return (
