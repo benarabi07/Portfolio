@@ -1,6 +1,5 @@
 import logoRouen from "../assets/logos/rouen.png";
 import logoEnastic from "../assets/logos/enastic.png";
-import logoBac from "../assets/logos/ibnou.png";
 
 export default function Education() {
   const formations = [
