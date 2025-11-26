@@ -30,8 +30,8 @@ export default function Header() {
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-full bg-gradient-to-br from-blue-300 flex items-center justify-center text-white font-bold">
-            A
+          <div className="h-10 w-10 rounded-full bg-gradient-to-br from-blue-400 flex items-center justify-center text-white font-bold">
+            MA
           </div>
           <div>
             <h1 className="text-lg font-semibold">Mahamat ABBAKABIR</h1>
