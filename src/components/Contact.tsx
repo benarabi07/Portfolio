@@ -94,8 +94,8 @@ export default function Contact() {
             <div className="space-y-4">
               <h3 className="text-xl font-semibold">Discutons ensemble</h3>
               <p className="text-sm text-gray-600">
-                Tu peux m&apos;écrire pour un stage, ou un projet
-                freelance. Je te répondrai dès que possible.
+                Vous pouvez m&apos;écrire pour un stage ou pour un projet freelance.
+                Je vous répondrai dès que possible.
               </p>
             </div>
 
