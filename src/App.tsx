@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Education from "./components/Education";
 import Skills from "./components/Skills";
 import About from "./components/About";
+import Experience from "./components/experience";
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
       <Header />
       <main className="max-w-5xl mx-auto px-4 ">
         <Hero />  
-        <About />      
+        <About />  
+        <Experience/>
         <Projects />
         <Education />
         <Skills />
