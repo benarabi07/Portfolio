@@ -21,14 +21,17 @@ import gamingImg from "../assets/projects/morpion.png";
 import admanagerImg from "../assets/projects/admanager.png";
 import serviceRestImg from "../assets/projects/xmlprojet.png";
 import terminologioImg from "../assets/projects/terminologio.png";
+import { useLanguage } from "../i18n";
 
 export default function Projects() {
+  const { language } = useLanguage();
+  const isFr = language === "fr";
   const projects = [
     {
       id: 1,
       image: ollcassistImg,
       title: "OllcAssist - Chatbot d'assistance",
-      desc: "Plateforme d'achat intelligente conçue par 46 collaborateurs. Conception d'une architecture microservices, développement d'APIs REST pour la gestion des commandes et intégration Keycloak pour l'authentification.",
+      desc: isFr ? "Plateforme d'achat intelligente conçue par 46 collaborateurs. Conception d'une architecture microservices, développement d'APIs REST pour la gestion des commandes et intégration Keycloak pour l'authentification." : "Smart purchasing platform designed by 46 collaborators. Microservices architecture, REST APIs for order management and Keycloak authentication integration.",
       techIcons: [SiSpringboot, SiAngular, SiDocker, SiKeycloak],
       ctaLabel: "Voir sur GitHub",
     },
@@ -36,7 +39,7 @@ export default function Projects() {
       id: 2,
       image: gamingImg,
       title: "GamingPlatform - Morpion en ligne",
-      desc: "Plateforme gaming avec gestion des utilisateurs, rôles et sécurité applicative. Développement de la logique métier back-end et participation aux tests fonctionnels.",
+      desc: isFr ? "Plateforme gaming avec gestion des utilisateurs, rôles et sécurité applicative. Développement de la logique métier back-end et participation aux tests fonctionnels." : "Gaming platform with user, role and application security management. Back-end business logic development and functional testing.",
       techIcons: [SiDotnet, SiBlazor, TbBrandCSharp],
       ctaLabel: "Voir sur GitHub",
     },
@@ -44,7 +47,7 @@ export default function Projects() {
       id: 3,
       image: admanagerImg,
       title: "ADManager - Gestion Active Directory",
-      desc: "Développement d'une application de gestion Active Directory (Samba4/LDAP).",
+      desc: isFr ? "Développement d'une application de gestion Active Directory (Samba4/LDAP)." : "Development of an Active Directory management application (Samba4/LDAP).",
       techIcons: [SiSymfony, SiAngular, SiSwagger],
       ctaLabel: "Voir sur GitHub",
     },
@@ -52,7 +55,7 @@ export default function Projects() {
       id: 4,
       image: serviceRestImg,
       title: "Service REST - XML & Cloud",
-      desc: "Développement d'un service REST permettant la gestion des documents XML et son déploiement dans le cloud.",
+      desc: isFr ? "Développement d'un service REST permettant la gestion des documents XML et son déploiement dans le cloud." : "Development of a REST service for managing XML documents and deploying it to the cloud.",
       techIcons: [SiSpringboot, BsFiletypeXml, SiClevercloud, SiMongodb],
       ctaLabel: "Voir sur GitHub",
     },
@@ -60,7 +63,7 @@ export default function Projects() {
       id: 5,
       image: terminologioImg,
       title: "Terminologio - Plateforme illustrée",
-      desc: "Plateforme interactive pour cartographier des concepts terminologiques.",
+      desc: isFr ? "Plateforme interactive pour cartographier des concepts terminologiques." : "Interactive platform for mapping terminological concepts.",
       techIcons: [SiJavascript, SiHtml5, SiPhp, SiMysql],
       ctaLabel: "Voir sur GitHub",
     },
@@ -75,11 +78,10 @@ export default function Projects() {
       className="mt-32 mb-20 px-8 py-16 rounded-3xl shadow-md from-sky-50 via-white to-sky-50"
     >
       <h2 className="text-3xl font-bold text-center text-sky-600">
-        Mes projets
+        {isFr ? "Mes projets" : "My projects"}
       </h2>
       <p className="text-center text-gray-600 mt-2 max-w-2xl mx-auto">
-        Sélection de projets académiques, personnels et professionnels sur
-        lesquels j&apos;ai travaillé.
+        {isFr ? "Sélection de projets académiques, personnels et professionnels sur lesquels j’ai travaillé." : "A selection of academic, personal and professional projects I have worked on."}
       </p>
 
       {/* Ligne 1 : 3 projets */}

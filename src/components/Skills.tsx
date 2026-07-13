@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
+import { useLanguage } from "../i18n";
 
 
 import reactLogo from "../assets/logos/react.svg";
@@ -46,6 +47,8 @@ const categoryVariants: Variants = {
 };
 
 export default function Skills() {
+  const { language } = useLanguage();
+  const isFr = language === "fr";
   const categories = [
     {
       title: "Frontend",
@@ -80,7 +83,7 @@ export default function Skills() {
       ],
     },
     {
-      title: "Base de données & autre",
+      title: isFr ? "Bases de données & autres" : "Databases & other tools",
       skills: [
         { name: "MySQL", logo: mysqlLogo },
         { name: "PostgreSQL", logo: postgreSqlOgo },
@@ -101,10 +104,10 @@ export default function Skills() {
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
     >
-      <h2 className="text-3xl font-bold text-center text-sky-600">Compétences</h2>
+      <h2 className="text-3xl font-bold text-center text-sky-600">{isFr ? "Compétences" : "Skills"}</h2>
 
       <p className="text-center text-gray-600 mt-2 max-w-2xl mx-auto">
-        Un aperçu des technologies et outils que j&apos;utilise au quotidien.
+        {isFr ? "Un aperçu des technologies et outils que j’utilise au quotidien." : "An overview of the technologies and tools I use every day."}
       </p>
 
       <div className="grid md:grid-cols-2 gap-10 mt-12">
