@@ -75,7 +75,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="mt-32 mb-20 px-8 py-16 rounded-3xl shadow-md from-sky-50 via-white to-sky-50"
+      className="section-surface mt-20 mb-20 px-6 md:px-8 py-16 rounded-3xl bg-white/65 backdrop-blur-sm"
     >
       <h2 className="text-3xl font-bold text-center text-sky-600">
         {isFr ? "Mes projets" : "My projects"}
@@ -89,21 +89,21 @@ export default function Projects() {
         {firstRow.map((p) => (
           <article
             key={p.id}
-            className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition flex flex-col overflow-hidden"
+            className="group bg-white/90 rounded-2xl border border-slate-100 shadow-lg shadow-slate-200/50 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-sky-100 transition-all duration-300 flex flex-col overflow-hidden"
           >
-            <div className="bg-gray-100 flex items-center justify-center">
+            <div className="bg-slate-50 flex items-center justify-center overflow-hidden">
               <img
                 src={p.image}
                 alt={p.title}
-                className="w-full h-auto max-h-64 object-contain"
+                className="w-full h-auto max-h-64 object-contain transition-transform duration-500 group-hover:scale-105"
               />
             </div>
             <div className="p-6 flex flex-col gap-3 flex-1">
               <h3 className="text-xl font-semibold">{p.title}</h3>
               <p className="text-sm text-gray-700 leading-relaxed">{p.desc}</p>
-              <div className="mt-2 flex flex-wrap items-center gap-3 text-2xl text-sky-600">
+              <div className="mt-2 flex flex-wrap items-center gap-3 text-xl text-sky-600">
                 {p.techIcons.map((Icon, idx) => (
-                  <span key={idx} className="flex items-center justify-center bg-sky-50 border border-sky-100 rounded-md w-9 h-9">
+                  <span key={idx} className="flex items-center justify-center bg-sky-50 border border-sky-100 rounded-lg w-9 h-9">
                     <Icon />
                   </span>
                 ))}
@@ -118,21 +118,21 @@ export default function Projects() {
         {secondRow.map((p) => (
           <article
             key={p.id}
-            className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition flex flex-col overflow-hidden w-full md:w-[calc(33.333%-1.25rem)]"
+            className="group bg-white/90 rounded-2xl border border-slate-100 shadow-lg shadow-slate-200/50 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-sky-100 transition-all duration-300 flex flex-col overflow-hidden w-full md:w-[calc(33.333%-1.25rem)]"
           >
-            <div className="bg-gray-100 flex items-center justify-center">
+            <div className="bg-slate-50 flex items-center justify-center overflow-hidden">
               <img
                 src={p.image}
                 alt={p.title}
-                className="w-full h-auto max-h-64 object-contain"
+                className="w-full h-auto max-h-64 object-contain transition-transform duration-500 group-hover:scale-105"
               />
             </div>
             <div className="p-6 flex flex-col gap-3 flex-1">
               <h3 className="text-xl font-semibold">{p.title}</h3>
               <p className="text-sm text-gray-700 leading-relaxed">{p.desc}</p>
-              <div className="mt-2 flex flex-wrap items-center gap-3 text-2xl text-sky-600">
+              <div className="mt-2 flex flex-wrap items-center gap-3 text-xl text-sky-600">
                 {p.techIcons.map((Icon, idx) => (
-                  <span key={idx} className="flex items-center justify-center bg-sky-50 border border-sky-100 rounded-md w-9 h-9">
+                  <span key={idx} className="flex items-center justify-center bg-sky-50 border border-sky-100 rounded-lg w-9 h-9">
                     <Icon />
                   </span>
                 ))}

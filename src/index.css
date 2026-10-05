@@ -1,4 +1,29 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #f7fbff;
+}
+
+::selection {
+  background: #bae6fd;
+  color: #0c4a6e;
+}
+
+.portfolio-shell {
+  background:
+    radial-gradient(circle at 12% 8%, rgba(125, 211, 252, 0.25), transparent 26rem),
+    radial-gradient(circle at 88% 24%, rgba(196, 181, 253, 0.18), transparent 23rem),
+    #f8fbff;
+}
+
+.section-surface {
+  border: 1px solid rgba(186, 230, 253, 0.8);
+  box-shadow: 0 20px 55px -35px rgba(14, 116, 144, 0.45);
+}
 @keyframes popup {
   0% {
     opacity: 0;

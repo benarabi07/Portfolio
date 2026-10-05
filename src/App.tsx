@@ -10,7 +10,7 @@ import Experience from "./components/Experience";
 import { LanguageProvider } from "./i18n";
 
 function App() {
-  return <LanguageProvider><div className="bg-blue-50 min-h-screen text-gray-800">
+  return <LanguageProvider><div className="portfolio-shell min-h-screen text-slate-800">
     <Header />
     <main className="max-w-5xl mx-auto px-4"><Hero /><About /><Experience /><Projects /><Education /><Skills /><Contact /></main>
     <Footer />
