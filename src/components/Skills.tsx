@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 import { useLanguage } from "../i18n";
 
-
 import reactLogo from "../assets/logos/react.svg";
 import angularLogo from "../assets/logos/angular.svg";
 import javascriptLogo from "../assets/logos/javascript.svg";
@@ -79,7 +78,6 @@ export default function Skills() {
         { name: "GitLab CI/CD", logo: gitlabLogo },
         { name: "Sonarqube", logo: sonarqube },
         { name: "Github", logo: githubLogo },
-
       ],
     },
     {
@@ -89,8 +87,7 @@ export default function Skills() {
         { name: "PostgreSQL", logo: postgreSqlOgo },
         { name: "MongoDB", logo: mongoDBLogo },
         { name: "Postman", logo: postmanLogo },
-        { name: "Figma", logo: figmaLogo },        
-
+        { name: "Figma", logo: figmaLogo },
       ],
     },
   ];
@@ -104,10 +101,14 @@ export default function Skills() {
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
     >
-      <h2 className="text-3xl font-bold text-center text-sky-600">{isFr ? "Compétences" : "Skills"}</h2>
+      <h2 className="text-3xl font-bold text-center text-sky-600">
+        {isFr ? "Compétences" : "Skills"}
+      </h2>
 
       <p className="text-center text-gray-600 mt-2 max-w-2xl mx-auto">
-        {isFr ? "Un aperçu des technologies et outils que j’utilise au quotidien." : "An overview of the technologies and tools I use every day."}
+        {isFr
+          ? "Un aperçu des technologies et outils que j’utilise au quotidien."
+          : "An overview of the technologies and tools I use every day."}
       </p>
 
       <div className="grid md:grid-cols-2 gap-10 mt-12">
@@ -121,7 +122,9 @@ export default function Skills() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
           >
-            <h3 className="text-xl font-semibold text-center mb-6">{cat.title}</h3>
+            <h3 className="text-xl font-semibold text-center mb-6">
+              {cat.title}
+            </h3>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {cat.skills.map((skill) => (
@@ -137,7 +140,9 @@ export default function Skills() {
                     alt={skill.name}
                     className="h-10 w-10 object-contain"
                   />
-                  <p className="mt-2 text-sm font-medium text-center">{skill.name}</p>
+                  <p className="mt-2 text-sm font-medium text-center">
+                    {skill.name}
+                  </p>
                 </motion.div>
               ))}
             </div>

@@ -218,11 +218,16 @@ export default function Experience() {
             <p className="text-sm font-medium text-slate-500">
               {exp.company} · {exp.year}
             </p>
-            <p className="text-sm leading-6 text-slate-600">{exp.description}</p>
+            <p className="text-sm leading-6 text-slate-600">
+              {exp.description}
+            </p>
             <ul className="space-y-2.5 text-sm leading-6 text-slate-700">
               {exp.tasks.map((task) => (
                 <li key={task} className="flex gap-3">
-                  <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-500" />
+                  <span
+                    aria-hidden="true"
+                    className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-sky-500"
+                  />
                   <span>{task}</span>
                 </li>
               ))}
